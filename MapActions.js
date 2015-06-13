@@ -1,18 +1,35 @@
 var geoJSONPath = './geography.json'
 var airportsJSONPath = './airports.json'
-	
+
+function getColor(d) {
+	return d > 90 ? '#fff7fb' : d > 85 ? '#ece7f2' : d > 80 ? '#d0d1e6'
+			: d > 75 ? '#a6bddb' : d > 70 ? '#74a9cf' : d > 65 ? '#3690c0'
+					: d > 60 ? '#0570b0' : d > 55 ? '#045a8d' : '#023858';
+}
+
 var defaultStyle = {
-	fillColor : '#9ecae1',
+	fillColor : 'white',
 	weight : 2,
 	opacity : 1,
-	color : 'white',
+	color : 'black',
 	dashArray : '3',
-	fillOpacity : 0.7
+	fillOpacity : 0
+}
+
+var waterStyle = function(feature){
+	return {
+		fillColor: getColor(feature.properties.PERCENT_ACCESS_TO_CLEAN_WATER),
+		weight: 2,
+		opacity: 1,
+		color: 'white',
+		dashArray: '3',
+		fillOpacity: 0.7
+	}
 }
 
 var highlightStyle = {
 	weight : 5,
-	color : '#666',
+	color : 'black',
 	dashArray : '',
 	fillOpacity : 0.7
 }
@@ -27,30 +44,28 @@ info.onAdd = function(map) {
 
 var numberOfAirports = new Map();
 
-$.getJSON(airportsJSONPath, function(data) {
-	L.geoJson(data, {
-		onEachFeature : function(feature, layer) {
+$.getJSON(airportsJSONPath,function(data) {
+	L.geoJson(data,{onEachFeature : function(feature, layer) {
 			layer.bindPopup(feature.properties.name);
-			if(numberOfAirports.get(feature.properties.country) === undefined) {
-				numberOfAirports.set(feature.properties.country, 1);
-			} else {
-				numberOfAirports.set(feature.properties.country, numberOfAirports.get(feature.properties.country) + 1);
+				if (numberOfAirports.get(feature.properties.country) === undefined) {
+					numberOfAirports.set(feature.properties.country,1);
+				} else {
+					numberOfAirports.set(feature.properties.country,numberOfAirports.get(feature.properties.country) + 1);
+				}
 			}
-		}
-	}).addTo(airports);
-})
-
+		}).addTo(airports);
+	})
 
 info.update = function(props) {
 	this._div.innerHTML = '<h4>Data Available for Country</h4>'
-			+ (props ? '<b>' + props.NAME + '</b><br />Number of Airports: ' + numberOfAirports.get(props.NAME)
+			+ (props ? '<b>' + props.NAME + '</b><br />Number of Airports: '
+					+ numberOfAirports.get(props.NAME)
+					+ '</b><br />Access to clean water: '
+					+ props.PERCENT_ACCESS_TO_CLEAN_WATER + "%"
 					: 'Hover over a Country');
 }
 
 info.addTo(map);
-
-
-
 
 $.getJSON(geoJSONPath, function(data) {
 	L.geoJson(data, {
@@ -65,7 +80,7 @@ $.getJSON(geoJSONPath, function(data) {
 					}
 				},
 				mouseout : function(e) {
-					e.target.setStyle(defaultStyle);
+					e.target.setStyle(waterStyle(feature));
 					info.update();
 				},
 				click : function(e) {
@@ -73,16 +88,16 @@ $.getJSON(geoJSONPath, function(data) {
 				}
 			})
 		},
-		style : defaultStyle
-	}).addTo(map);
+		style : waterStyle
+	}).addTo(map)
 })
 
-var baseLayers = {
-	
+var colorData = {
+  
 }
 
 var overlay = {
-	"Airports": airports
+	"Airports" : airports
 }
 
-L.control.layers(baseLayers, overlay).addTo(map);
+L.control.layers(colorData, overlay).addTo(map);

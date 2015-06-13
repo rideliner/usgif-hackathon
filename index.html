@@ -22,16 +22,14 @@
 
 <script>
   var airports = new L.LayerGroup();
+  var percentWaterAcess = new L.LayerGroup();
 
-  var map = L.map('map', {
-	  layers: [airports]
-  }).setView([ 13.364376, -0.3763377 ], 5);
+  var map = L.map('map').setView([ 13.364376, -0.3763377 ], 5);
 
   L.esri.basemapLayer('Gray').addTo(map);
 </script>
 
 <script src="MapActions.js"></script>
-<script src="MapLayers.js"></script>
 
 </body>
 </html>
