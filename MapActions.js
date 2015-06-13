@@ -26,12 +26,11 @@ info.onAdd = function(map) {
 
 info.update = function(props) {
 	this._div.innerHTML = '<h4>Data Available for Country</h4>'
-			+ (props ? '<b>' + props.NAME + '</b><br />' + props.ECONOMY
+			+ (props ? '<b>' + props.NAME + '</b><br />' + props.MESSAGE
 					: 'Hover over a Country');
 }
 
 info.addTo(map);
-
 
 $.getJSON(geoJSONPath, function(data) {
 	L.geoJson(data, {
