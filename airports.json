@@ -1,0 +1,1066 @@
+[
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Cadjehoun",
+            "country": "Benin"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                2.384353,
+                6.357228
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ouagadougou",
+            "country": "Burkina Faso"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.512417,
+                12.353194
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Bobo Dioulasso",
+            "country": "Burkina Faso"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.330969,
+                11.160056
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kotoka Intl",
+            "country": "Ghana"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.166786,
+                5.605186
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Tamale",
+            "country": "Ghana"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.863214,
+                9.557192
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Wa",
+            "country": "Ghana"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.507694,
+                10.082664
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Sunyani",
+            "country": "Ghana"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -2.328756,
+                7.361828
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Takoradi",
+            "country": "Ghana"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.774756,
+                4.896056
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Abidjan Felix Houphouet Boigny Intl",
+            "country": "Cote d'Ivoire"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.926294,
+                5.261386
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Bouake",
+            "country": "Cote d'Ivoire"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -5.073667,
+                7.7388
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Daloa",
+            "country": "Cote d'Ivoire"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.473189,
+                6.792808
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Korhogo",
+            "country": "Cote d'Ivoire"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -5.556664,
+                9.387183
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Man",
+            "country": "Cote d'Ivoire"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -7.587364,
+                7.272069
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "San Pedro",
+            "country": "Cote d'Ivoire"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -6.660817,
+                4.746717
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Yamoussoukro",
+            "country": "Cote d'Ivoire"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -5.365581,
+                6.903167
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Nnamdi Azikiwe Intl",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.263172,
+                9.006792
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Akure",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.301008,
+                7.246739
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Benin",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.599503,
+                6.316981
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Calabar",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.347197,
+                4.976019
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Enugu",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.561961,
+                6.474272
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Gusau",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.696111,
+                12.171667
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ibadan",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3.978333,
+                7.362458
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ilorin",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                4.493919,
+                8.440211
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Yakubu Gowon",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.86905,
+                9.639828
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kaduna",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.320114,
+                10.696025
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Mallam Aminu Intl",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.524622,
+                12.047589
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Maiduguri",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                13.08095,
+                11.855347
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Makurdi",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.613939,
+                7.703883
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Murtala Muhammed",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3.321156,
+                6.577369
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Minna New",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.462256,
+                9.652172
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Port Harcourt Intl",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                6.949594,
+                5.015494
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Sadiq Abubakar Iii Intl",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.207189,
+                12.916322
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Yola",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                12.430422,
+                9.257553
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Zaria",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.685806,
+                11.130192
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Maradi",
+            "country": "Niger"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.126753,
+                13.502531
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Diori Hamani",
+            "country": "Niger"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                2.183614,
+                13.481547
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Tahoua",
+            "country": "Niger"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.265358,
+                14.875658
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Manu Dayak",
+            "country": "Niger"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.000114,
+                16.965997
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Dirkou",
+            "country": "Niger"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                12.86865,
+                18.968703
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Diffa",
+            "country": "Niger"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                12.626686,
+                13.372894
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Zinder",
+            "country": "Niger"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                8.983761,
+                13.778997
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Niamtougou International",
+            "country": "Togo"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.09125,
+                9.767333
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Gnassingbe Eyadema Intl",
+            "country": "Togo"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                1.254511,
+                6.165611
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Senou",
+            "country": "Mali"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -7.949944,
+                12.533544
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Gao",
+            "country": "Mali"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -0.005456,
+                16.248433
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kayes Dag Dag",
+            "country": "Mali"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -11.404397,
+                14.481233
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ambodedjo",
+            "country": "Mali"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -4.079561,
+                14.512803
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Tombouctou",
+            "country": "Mali"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -3.007583,
+                16.730458
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Tessalit",
+            "country": "Mali"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                0.977308,
+                20.242983
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Freetown Lungi",
+            "country": "Sierra Leone"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -13.195489,
+                8.616444
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Monrovia Spriggs Payne",
+            "country": "Liberia"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -10.758722,
+                6.289061
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Monrovia Roberts Intl",
+            "country": "Liberia"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -10.362311,
+                6.233789
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Fria",
+            "country": "Guinea"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -13.569167,
+                10.350556
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Faranah",
+            "country": "Guinea"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -10.769825,
+                10.035467
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Labe",
+            "country": "Guinea"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -12.28685,
+                11.326058
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Conakry",
+            "country": "Guinea"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -13.611961,
+                9.576889
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kenema Airport",
+            "country": "Sierra Leone"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -11.1766,
+                7.89129
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Bo Airport",
+            "country": "Sierra Leone"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -11.761,
+                7.9444
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Sherbro International Airport",
+            "country": "Sierra Leone"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -12.5189,
+                7.53242
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kumasi Airport",
+            "country": "Ghana"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -1.59082,
+                6.71456
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Imo Airport",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.20603,
+                5.42706
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Warri Airport",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.45,
+                5.31
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Cape Palmas Airport",
+            "country": "Liberia"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -7.69695,
+                4.37902
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Gombe Lawanti International Airport",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                12.430278,
+                9.2575
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Akwa Ibom International Airport",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.933333,
+                5.05
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Katsina Airport",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                7.660278,
+                13.007778
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Mammy Yoko Heliport",
+            "country": "Sierra Leone"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -13.289722,
+                8.490278
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Hastings Airport",
+            "country": "Sierra Leone"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -13.1291,
+                8.39713
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Bougouni",
+            "country": "Mali"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -7.517,
+                11.45
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Yengema Airport",
+            "country": "Sierra Leone"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -11.047192,
+                8.615308
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Gbangbatok Airport",
+            "country": "Sierra Leone"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -12.383,
+                7.767
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Manantali Bengassi Airport ",
+            "country": "Mali"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -10.50432,
+                13.25561
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kissidougou",
+            "country": "Guinea"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -10.124443,
+                9.160556
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Kankan",
+            "country": "Guinea"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -9.227499,
+                10.448333
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Lagos Lagoon",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                3.532115,
+                6.465907
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Escravos",
+            "country": "Nigeria"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                5.187993,
+                5.617203
+            ]
+        }
+    }
+]

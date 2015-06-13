@@ -1,5 +1,6 @@
 var geoJSONPath = './geography.json'
-
+var airportsJSONPath = './airports.json'
+	
 var defaultStyle = {
 	fillColor : '#9ecae1',
 	weight : 2,
@@ -32,6 +33,15 @@ info.update = function(props) {
 
 info.addTo(map);
 
+$.getJSON(airportsJSONPath, function(data) {
+	L.geoJson(data, {
+		onEachFeature : function(feature, layer) {
+			layer.bindPopup(feature.properties.name);
+		}
+	}).addTo(airports);
+})
+
+
 $.getJSON(geoJSONPath, function(data) {
 	L.geoJson(data, {
 		onEachFeature : function(feature, layer) {
@@ -56,3 +66,13 @@ $.getJSON(geoJSONPath, function(data) {
 		style : defaultStyle
 	}).addTo(map);
 })
+
+var baseLayers = {
+	
+}
+
+var overlay = {
+	"Airports": airports
+}
+
+L.control.layers(baseLayers, overlay).addTo(map);
