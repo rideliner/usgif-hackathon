@@ -25,19 +25,17 @@ info.onAdd = function(map) {
 	return this._div;
 }
 
-var numberOfAirports = [];
+var numberOfAirports = new Map();
 
 $.getJSON(airportsJSONPath, function(data) {
 	L.geoJson(data, {
 		onEachFeature : function(feature, layer) {
 			layer.bindPopup(feature.properties.name);
-			/*
-			if(numberOfAirports[feature.properties.ID] == null){
-				numberOfAirports[feature.properties.ID] = 1
+			if(numberOfAirports.get(feature.properties.country) === undefined) {
+				numberOfAirports.set(feature.properties.country, 1);
 			} else {
-				numberOfAirports[feature.properties.ID]++;
+				numberOfAirports.set(feature.properties.country, numberOfAirports.get(feature.properties.country) + 1);
 			}
-			*/
 		}
 	}).addTo(airports);
 })
@@ -45,7 +43,7 @@ $.getJSON(airportsJSONPath, function(data) {
 
 info.update = function(props) {
 	this._div.innerHTML = '<h4>Data Available for Country</h4>'
-			+ (props ? '<b>' + props.NAME + '</b><br />Number of Airports: ' + numberOfAirports[props.ID]
+			+ (props ? '<b>' + props.NAME + '</b><br />Number of Airports: ' + numberOfAirports.get(props.NAME)
 					: 'Hover over a Country');
 }
 

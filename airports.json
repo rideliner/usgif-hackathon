@@ -115,7 +115,7 @@
         "type": "Feature",
         "properties": {
             "name": "Abidjan Felix Houphouet Boigny Intl",
-            "country": "Cote d'Ivoire"
+            "country": "Côte d'Ivoire"
         },
         "geometry": {
             "type": "Point",
@@ -129,7 +129,7 @@
         "type": "Feature",
         "properties": {
             "name": "Bouake",
-            "country": "Cote d'Ivoire"
+            "country": "Côte d'Ivoire"
         },
         "geometry": {
             "type": "Point",
@@ -143,7 +143,7 @@
         "type": "Feature",
         "properties": {
             "name": "Daloa",
-            "country": "Cote d'Ivoire"
+            "country": "Côte d'Ivoire"
         },
         "geometry": {
             "type": "Point",
@@ -157,7 +157,7 @@
         "type": "Feature",
         "properties": {
             "name": "Korhogo",
-            "country": "Cote d'Ivoire"
+            "country": "Côte d'Ivoire"
         },
         "geometry": {
             "type": "Point",
@@ -171,7 +171,7 @@
         "type": "Feature",
         "properties": {
             "name": "Man",
-            "country": "Cote d'Ivoire"
+            "country": "Côte d'Ivoire"
         },
         "geometry": {
             "type": "Point",
@@ -185,7 +185,7 @@
         "type": "Feature",
         "properties": {
             "name": "San Pedro",
-            "country": "Cote d'Ivoire"
+            "country": "Côte d'Ivoire"
         },
         "geometry": {
             "type": "Point",
@@ -199,7 +199,7 @@
         "type": "Feature",
         "properties": {
             "name": "Yamoussoukro",
-            "country": "Cote d'Ivoire"
+            "country": "Côte d'Ivoire"
         },
         "geometry": {
             "type": "Point",
