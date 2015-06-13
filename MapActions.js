@@ -45,7 +45,7 @@ $.getJSON(airportsJSONPath, function(data) {
 
 info.update = function(props) {
 	this._div.innerHTML = '<h4>Data Available for Country</h4>'
-			+ (props ? '<b>' + props.NAME + '</b><br />Number of Airports: ' + numberOfAirports[props.ID];
+			+ (props ? '<b>' + props.NAME + '</b><br />Number of Airports: ' + numberOfAirports[props.ID]
 					: 'Hover over a Country');
 }
 
