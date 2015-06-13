@@ -1,5 +1,6 @@
 var geoJSONPath = './geography.json'
 var airportsJSONPath = './airports.json'
+var ebolaJSONPath = './ebola.json'
 
 function getColor(d) {
 	return d > 90 ? '#fff7fb' : d > 85 ? '#ece7f2' : d > 80 ? '#d0d1e6'
@@ -34,6 +35,40 @@ var highlightStyle = {
 	fillOpacity : 0.7
 }
 
+var ZoomReset = L.Control.extend({
+  initialize: function(center, zoom) {
+    L.Util.setOptions(this, {
+      position: 'topleft',
+    });
+
+    this._center = center;
+    this._zoom = zoom;
+  },
+
+  options: {
+    position: 'topleft'
+  },
+
+  onAdd: function(map) {
+    var container = document.querySelector('.leaflet-control-zoom');
+    var link = L.DomUtil.create('a', 'leaflet-control-zoom-reset', container);
+    link.innerHTML = '↶';
+    link.href = '#';
+    link.title = 'Zoom reset';
+
+    L.DomEvent
+      .on(link, 'mousedown dblclick', L.DomEvent.stopPropagation)
+      .on(link, 'click', L.DomEvent.stop)
+      .on(link, 'click', function() {
+        map.setView(this._center, this._zoom);
+      });
+
+    return link;
+  }
+});
+
+map.addControl(new ZoomReset([ 13.364376, -0.3763377 ], 5));
+
 var info = L.control();
 
 info.onAdd = function(map) {
@@ -67,6 +102,10 @@ info.update = function(props) {
 
 info.addTo(map);
 
+$.getJSON(ebolaJSONPath, function(data) {
+	ebola.setData(data);
+})
+
 $.getJSON(geoJSONPath, function(data) {
 	L.geoJson(data, {
 		onEachFeature : function(feature, layer) {
@@ -97,7 +136,8 @@ var colorData = {
 }
 
 var overlay = {
-	"Airports" : airports
+	"Airports": airports,
+	"Ebola": ebola
 }
 
 L.control.layers(colorData, overlay).addTo(map);
