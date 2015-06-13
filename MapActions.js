@@ -25,21 +25,33 @@ info.onAdd = function(map) {
 	return this._div;
 }
 
-info.update = function(props) {
-	this._div.innerHTML = '<h4>Data Available for Country</h4>'
-			+ (props ? '<b>' + props.NAME + '</b><br />' + props.MESSAGE
-					: 'Hover over a Country');
-}
-
-info.addTo(map);
+var numberOfAirports = [];
 
 $.getJSON(airportsJSONPath, function(data) {
 	L.geoJson(data, {
 		onEachFeature : function(feature, layer) {
 			layer.bindPopup(feature.properties.name);
+			/*
+			if(numberOfAirports[feature.properties.ID] == null){
+				numberOfAirports[feature.properties.ID] = 1
+			} else {
+				numberOfAirports[feature.properties.ID]++;
+			}
+			*/
 		}
 	}).addTo(airports);
 })
+
+
+info.update = function(props) {
+	this._div.innerHTML = '<h4>Data Available for Country</h4>'
+			+ (props ? '<b>' + props.NAME + '</b><br />Number of Airports: ' + numberOfAirports[props.ID];
+					: 'Hover over a Country');
+}
+
+info.addTo(map);
+
+
 
 
 $.getJSON(geoJSONPath, function(data) {

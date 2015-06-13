@@ -4,7 +4,8 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Benin"
+                "NAME": "Benin",
+                "ID": 0
             },
             "geometry": {
                 "type": "Polygon",
@@ -2485,7 +2486,9 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Burkina Faso"
+                "NAME": "Burkina Faso",
+                "ID": 4
+                
             },
             "geometry": {
                 "type": "Polygon",
@@ -6942,7 +6945,8 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Côte d'Ivoire"
+                "NAME": "Côte d'Ivoire",
+                "ID": 10
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -13377,7 +13381,8 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Ghana"
+                "NAME": "Ghana",
+                "ID": 6
             },
             "geometry": {
                 "type": "Polygon",
@@ -16710,7 +16715,8 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Guinea"
+                "NAME": "Guinea",
+                "ID": 7
             },
             "geometry": {
                 "type": "Polygon",
@@ -23243,7 +23249,8 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Liberia"
+                "NAME": "Liberia",
+                "ID": 8
             },
             "geometry": {
                 "type": "Polygon",
@@ -26048,7 +26055,9 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Mali"
+                "NAME": "Mali",
+				"ID": 3
+                
             },
             "geometry": {
                 "type": "Polygon",
@@ -33065,7 +33074,8 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Niger"
+                "NAME": "Niger",
+                "ID": 9
             },
             "geometry": {
                 "type": "Polygon",
@@ -37246,7 +37256,9 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Sierra Leone"
+                "NAME": "Sierra Leone",
+                "ID": 5
+                
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -40045,7 +40057,9 @@
         {
             "type": "Feature",
             "properties": {
-                "NAME": "Nigeria"
+                "NAME": "Nigeria",
+                "ID": 1
+                
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -47164,7 +47178,9 @@
         {
             "type": "Feature",
             "properties": {
-                "SOVEREIGNT": "Togo"
+                "NAME": "Togo",
+ 				"ID": 2
+                
             },
             "geometry": {
                 "type": "Polygon",
