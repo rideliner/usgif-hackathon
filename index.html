@@ -26,10 +26,12 @@
 	<script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
 
 	<script>
-		var defaultLayer = new L.LayerGroup();
-		var waterLayer = new L.LayerGroup();
-		var ebolaLayer = new L.LayerGroup();
-
+		var defaultLayer = new L.FeatureGroup();
+		var waterLayer = new L.FeatureGroup();
+		var sanitationLayer = new L.FeatureGroup();
+		var ebolaLayer = new L.FeatureGroup();
+		
+		
 		var map = L.map('map', {
 			"layers" : [ defaultLayer ]
 		}).setView([ 13.364376, -0.3763377 ], 5);
@@ -53,6 +55,9 @@
 		
 		map.addLayer(waterLayer);
 		map.removeLayer(waterLayer);
+		
+		map.addLayer(sanitationLayer);
+		map.removeLayer(sanitationLayer);
 		
 		map.addLayer(ebolaLayer);
 		map.removeLayer(ebolaLayer);
