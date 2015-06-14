@@ -30,41 +30,32 @@
 		var waterLayer = new L.FeatureGroup();
 		var sanitationLayer = new L.FeatureGroup();
 		var ebolaLayer = new L.FeatureGroup();
-		
+		var airports = new L.LayerGroup();
 		
 		var map = L.map('map', {
 			"layers" : [ defaultLayer ]
 		}).setView([ 13.364376, -0.3763377 ], 5);
 		L.esri.basemapLayer('Gray').addTo(map);
 		
-		var ebolaJSONPath = './ebola.json'
+		var baseMap = {
+            "Default" : defaultLayer,
+	        "Sanitation Access" : sanitationLayer,
+        	"Water Access" : waterLayer
+        }
 
+        var overlay = {
+        	"Airports" : airports,
+        	"Ebola" : ebolaLayer
+        }
 
-		$.getJSON(ebolaJSONPath, function(data) {
-			L.geoJson(data, {
-				pointToLayer: function(feature, latlong){
-					return L.circle(latlong,  feature.properties.value * 50, {
-						color: 'GREEN',
-						fillColor: 'GREEN'
-					})
-				}
-			}).addTo(ebolaLayer);
-			
-		})
-		
-		
-		map.addLayer(waterLayer);
-		map.removeLayer(waterLayer);
-		
-		map.addLayer(sanitationLayer);
-		map.removeLayer(sanitationLayer);
-		
-		map.addLayer(ebolaLayer);
-		map.removeLayer(ebolaLayer);
-		
+        L.control.layers(baseMap, overlay).addTo(map);	
 	</script>
 
-	<script src="MapActions.js"></script>
+    <script src="Layer-default.js"></script>
+    <script src="Layer-ebola.js"></script>
+    <script src="Layer-water.js"></script>
+    <script src="Layer-sanitation.js"></script>
+	<script src="Layer-airports.js"></script>
 
 </body>
 </html>
