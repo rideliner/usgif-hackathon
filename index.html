@@ -1,47 +1,67 @@
 <html>
 <head>
-  <meta charset=utf-8 />
-  <title>Ebola Data Tracker</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<meta charset=utf-8 />
+<title>Ebola Data Tracker</title>
+<meta name='viewport'
+	content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
-  <!-- Load Leaflet from CDN-->
-  <link rel="stylesheet" href="http://cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css" />
-  <script src="http://cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
+<!-- Load Leaflet from CDN-->
+<link rel="stylesheet"
+	href="http://cdn.jsdelivr.net/leaflet/0.7.3/leaflet.css" />
+<script src="http://cdn.jsdelivr.net/leaflet/0.7.3/leaflet.js"></script>
 
-  <!-- Load Esri Leaflet from CDN -->
-  <!-- we encourage you to replace 'latest' with a hardcode version number (like '1.0.0-rc.7') in production applications -->
-  <script src="http://cdn.jsdelivr.net/leaflet.esri/latest/esri-leaflet.js"></script>
+<!-- Load Esri Leaflet from CDN -->
+<!-- we encourage you to replace 'latest' with a hardcode version number (like '1.0.0-rc.7') in production applications -->
+<script
+	src="http://cdn.jsdelivr.net/leaflet.esri/latest/esri-leaflet.js"></script>
 
-  <link rel="stylesheet" href="AppStyle.css" />
+<link rel="stylesheet" href="AppStyle.css" />
 </head>
 
 <body>
-<div id="map"></div>
+	<div id="map"></div>
 
-<script src="./heatmap.js"></script>
-<script src="./leaflet-heatmap.js"></script>
+	<script src="./heatmap.js"></script>
+	<script src="./leaflet-heatmap.js"></script>
+	<script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
 
-<script>
-  var airports = new L.LayerGroup();
-  var ebola = new HeatmapOverlay({
-    "radius": .5,
-    "scaleRadius": true,
-    "useLocalExtrema": false,
-    latField: 'lng',
-    lngField: 'lat',
-    value: 'count'
-  });
+	<script>
+		var defaultLayer = new L.LayerGroup();
+		var waterLayer = new L.LayerGroup();
+		var ebolaLayer = new L.LayerGroup();
 
-  var map = L.map('map', {
-	layers: [ebola]
-  }).setView([ 13.364376, -0.3763377 ], 5);
+		var map = L.map('map', {
+			"layers" : [ defaultLayer ]
+		}).setView([ 13.364376, -0.3763377 ], 5);
+		L.esri.basemapLayer('Gray').addTo(map);
+		
+		var ebolaJSONPath = './ebola.json'
 
-  L.esri.basemapLayer('Gray').addTo(map);
-</script>
 
-<script src="MapActions.js"></script>
+		$.getJSON(ebolaJSONPath, function(data) {
+			L.geoJson(data, {
+				pointToLayer: function(feature, latlong){
+					return L.circle(latlong,  feature.properties.value * 50, {
+						color: 'GREEN',
+						fillColor: 'GREEN'
+					})
+				}
+			}).addTo(ebolaLayer);
+			
+		})
+		
+		
+		map.addLayer(waterLayer);
+		map.removeLayer(waterLayer);
+		
+		map.addLayer(ebola);
+		map.removeLayer(ebola);
+		
+	</script>
+
+	<script src="MapActions.js"></script>
 
 </body>
 </html>

@@ -16720,7 +16720,8 @@
             "properties": {
                 "NAME": "Guinea",
                 "ID": 7,
-                "PERCENT_ACCESS_TO_CLEAN_WATER": 75
+                "PERCENT_ACCESS_TO_CLEAN_WATER": 75,
+               	"NUMBER_INFECTED" : 3677
             },
             "geometry": {
                 "type": "Polygon",
@@ -23255,7 +23256,8 @@
             "properties": {
                 "NAME": "Liberia",
                 "ID": 8,
-                "PERCENT_ACCESS_TO_CLEAN_WATER": 75
+                "PERCENT_ACCESS_TO_CLEAN_WATER": 75,
+               	"NUMBER_INFECTED" : 10666
             },
             "geometry": {
                 "type": "Polygon",
@@ -26062,7 +26064,8 @@
             "properties": {
                 "NAME": "Mali",
 				"ID": 3,
-                "PERCENT_ACCESS_TO_CLEAN_WATER": 67
+                "PERCENT_ACCESS_TO_CLEAN_WATER": 67,
+               	"NUMBER_INFECTED" : 8
             },
             "geometry": {
                 "type": "Polygon",
@@ -37264,7 +37267,8 @@
             "properties": {
                 "NAME": "Sierra Leone",
                 "ID": 5,
-				"PERCENT_ACCESS_TO_CLEAN_WATER": 60                
+				"PERCENT_ACCESS_TO_CLEAN_WATER": 60,
+               	"NUMBER_INFECTED" : 12932                
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -40065,7 +40069,8 @@
             "properties": {
                 "NAME": "Nigeria",
                 "ID": 1,
-                "PERCENT_ACCESS_TO_CLEAN_WATER": 64
+                "PERCENT_ACCESS_TO_CLEAN_WATER": 64,
+               	"NUMBER_INFECTED" : 20
                 
             },
             "geometry": {
