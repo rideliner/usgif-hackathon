@@ -41,6 +41,7 @@ info.update = function(props) {
 }
 info.addTo(map);
 
+
 $.getJSON(geoJSONPath, function(data) {
 	L.geoJson(data, {
 		onEachFeature : function(feature, layer) {
@@ -59,7 +60,15 @@ $.getJSON(geoJSONPath, function(data) {
 					info.update();
 				},
 				click : function(e) {
-					map.fitBounds(e.target.getBounds());
+					if(!centeredOnCountry || currentCountry != layer.feature.properties.NAME){
+						map.fitBounds(e.target.getBounds());
+						currentCountry = layer.feature.properties.NAME;
+						console.log(currentCountry);
+						centeredOnCountry = true;
+					} else {
+						map.setView([ 13.364376, -0.3763377 ], 5);
+						centeredOnCountry = false;
+					}
 				}
 			})
 		},

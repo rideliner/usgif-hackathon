@@ -30,6 +30,9 @@
 		var ebolaLayer = new L.FeatureGroup();
 		var airports = new L.LayerGroup();
 		
+		var centeredOnCountry = false;
+		var currentCountry = "";
+		
 		var map = L.map('map', {
 			"layers" : [ defaultLayer ]
 		}).setView([ 13.364376, -0.3763377 ], 5);
