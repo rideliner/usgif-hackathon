@@ -1,7 +1,6 @@
 
 var airportsJSONPath = './airports.json'
 
-var airports = new L.LayerGroup();
 var numberOfAirports = new Map();
 
 $.getJSON(airportsJSONPath,function(data) {
