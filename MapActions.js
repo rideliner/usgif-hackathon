@@ -127,6 +127,8 @@ $.getJSON(geoJSONPath, function(data) {
 					var layer = e.target;
 					layer.setStyle(highlightStyle);
 					info.update(layer.feature.properties);
+					layer.bringToFront();
+					ebolaLayer.eachLayer(function(e) { e.bringToFront(); });
 				},
 				mouseout : function(e) {
 					e.target.setStyle(waterStyle(feature));
